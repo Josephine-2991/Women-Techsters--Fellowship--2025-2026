@@ -29,15 +29,14 @@ const Account4={
     name: "Fred Hen",
     balance: 3000,
     currency:"NGN",
-    type: "Checkings"
-    
+    type: "Savings"
 }
 
 const Account5={
     name: "Rich",
     balance: "4000",
     currency:"USD",
-    type: "Savings"
+    type: "Checkings"
     
 }
 
@@ -114,5 +113,20 @@ console.log(Account5.balance)
   console.log(Account5.balance)
     }
     
-// Console.log
-//  if Account         
+//Account with the highest balance
+if (Account1 > Account2 && Account1 > Account2 &&Account1 > Account4){
+    console.log(`${Account1.name} has the highest balance`)
+
+}
+
+if (Account2 > Account1 && Account2 > Account3 && Account2 > Account4){
+    console.log(`${Account2.name} has the highest balance`)
+}
+
+if (Account3 > Account1 && Account3 > Account2 && Account3 > Account4){
+    console.log(`${Account3.name} has the highest balance`)
+}
+
+if (Account4.balance > Account2.balance && Account4.balance > Account2.balance && Account4.balance > Account3.balance){
+    console.log(`${Account1.name} has the highest balance`)
+}
